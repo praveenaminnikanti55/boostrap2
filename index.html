@@ -193,62 +193,49 @@ font-family:Poppins;
     background-size: cover;
 }*/
 
-.card-section{
+.main-card{
     background-color: #223247;
-    width:100%;
-   
    
 }
-
+.main-card h3{
+    color: white;
+}
 .box{
     position: relative;
 }
-.description-1{
-    font-family:"poppins";
-    font-size:24px;
-    color:#FFFFFF;
-}
-
 .options{
     background-color: #223247;
     border: none;
     color: white;
-    font-size:18px;
     border-bottom: 1px solid;
     border-bottom-color: #8695A8;
     margin-bottom: 20px;
     width:61%;
 }
-.select-options{
+.select-list{
     background-color: #223247;
     border: none;
     color: white;
-    font-size:18px;
     border-bottom: 1px solid;
     border-bottom-color: #8695A8;
     margin-bottom: 20px;
     width:61%;
 }
-.headingprice{
+.price-heading{
     color: white;
-    font-family:"poppins";
-    font-weight:bold;
-    font-size:34px;
-    padding-left:10px;
-    padding-right:10px;
-
-   
+    font-family: "poppins";
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
 }
-
-  
-
 .description{
     color: #8695A8;
     font-family: "poppins";
-    font-size: 20px;
+    font-size: 17px;
     text-align:center;
-     padding: 0px 9px 0px ;
-   
+    font-weight: 400;
+    padding: 0px 9px 0px 
 
 } 
 
@@ -276,7 +263,7 @@ font-family:Poppins;
     width: 100%;
     height: 100%;
 }**/
-.desc_container{
+.desc-container{
     position: absolute;
     top: 50%;
     left: 5%;
@@ -287,7 +274,7 @@ font-family:Poppins;
 
 .mxplayer-container{
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 9%;
     z-index: 1;
 
@@ -309,10 +296,11 @@ font-family:Poppins;
     
 }
 
-.paragraph{
+
+.para-1{
     color: white;
     font-family: "poppins";
-    font-size:21px;
+    font-size:24px;
     max-width: 586px;
 }
 .name{
@@ -321,7 +309,7 @@ font-family:Poppins;
     font-size: 21px;
     font-weight:700;
 }
-.card-box {
+.box-container {
     position: relative;
     width: 100%;
   }
@@ -333,21 +321,16 @@ font-family:Poppins;
   }**/
   
   .card-under {
-    width: 100%;
-    height:0;
     position: absolute;
-    background-color:#223247;
-    left: 0;
     bottom: 0;
-    right:0;
-    z-index: 1;
-    transition: .5s ease;
+    left: 0;
+    right: 0;
+    background-color:#223247;
     overflow: hidden;
-
-   
-   
-
-    
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    z-index: 1;
   }
   
   .card-box:hover .card-under {
@@ -355,62 +338,72 @@ font-family:Poppins;
     width:100%;
   }
   
-  .card2-text {
+  .cardtext {
     color: white;
-    font-weight:"semibold";
     position: absolute;
-    font-size:34px;
+    font-size:20px;
     left: 0%;
   }
   /**.overlay_heading{
       width: 20%; }**/
+
+  @media only screen and (min-width: 320px) and (max-width: 425px) {
+    .description{
+        font-size: 14px;
+    }
+    .price-heading{
+        font-size:10px ;
+        padding: 3px;
+    }
+}
+
+
   
 @media only screen and (min-width: 576px) and (max-width: 986px) {
     .description{
         font-size: 9px;
     }
-    .headingprice{
-        font-size:10px ;
+    .price-heading{
+        font-size:8px ;
         padding: 3px;
     }
 }
-@media only screen and (min-width:987px) and (max-width:1250px) {
+@media only screen and (min-width:987px) and (max-width:1081px) {
     .description{
         font-size: 15px;
     }
-    .headingprice{
+    .price-heading{
         font-size:20px ;
         padding: 10px;
 
 } 
 }
-
 @media only screen and (min-width:320px) and (max-width:475px) {
     .name{
         font-size: 12px;
 
     }
-    .description-1{
+    .para-1{
         font-size: 12px;
     }
 }
-
-
-
-
-@media only screen and (min-width:576px) and (max-width:1250px) {
-   
+@media only screen and (min-width:576px) and (max-width:1024px) {
     .name{
         font-size: 8px;
         padding: 0px;
 
     }
-    .description-1{
-        font-size: 10px;
+    .para-1{
+        font-size: 8px;
         padding: 0px;
     }
-
 }
+
+
+
+
+
+
 /* <!----footer--> */
 
 .footer-sec{
@@ -621,173 +614,152 @@ font-family:Poppins;
 </header>
  
     
-
-
-
-
-
-<div class="container-fluid m-0 p-0">
-    <div class="row no-gutters">
-        <div class="col-lg-4 col-md-4 col-sm-6  box">
-            <div class="card-box">
-                <img src="g-mugesh-video.png" alt="image1" width="100%">
-                <div class="desc_container ">
-                    <a href="#0" class="icon-play playicon"></a>
-                    <p class="description-1">Lorem ipsum dolor sit amet, consecutor adipiscing</p>
-                    <small class="name">Prof. Name Name Name</small>
-                </div>
-                <div class="card-under">
-                    <div class="card2-text text-center">
-                        <h5 class="headingprice  mb-2  text-center">Infosys Prize 2019 Winner's Sympoium</h5>
-                        <select class="select-options">
-                            <option>Edition 1</option>
-                            <option>Edition 2</option>
-                            <option>Edition 3</option>
-                            <option>Edition 4</option>
-                            <option>Edition 5</option>
-                        </select>
-                      
-                            <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
-                                New Avenue
-                                of sharing knowledge
-                                across deciplines
-                                called Winners' Symposium, to encourage new ideas and innovative collaboration.
-                            </p>
-                        </div>
-
-                   
-                </div>
-            </div>
-
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 text-center card-section  box  pt-3 " >
-           <h3 class="headingprice mb-2 text-center ">Infosys Prize 2019 Winner's Sympoium</h3>
-            <select class="options">
+      <div class="container-fluid m-0 p-0">
+      <div class="row no-gutters">
+      <div class="col-lg-4 col-md-4 col-sm-6 border box">
+      <div class="card-box">
+      <img src="g-mugesh-video.png" alt="image1" width="100%">
+      <div class="desc-container ">
+        <a href="#0" class="icon-play playicon"></a>
+        <p class="para-1">Lorem ipsum dolor sit amet, consecutor adipiscing</p>
+        <small class="name">Prof. Name Name Name</small>
+    </div>
+    <div class="card-under">
+        <div class="cardtext text-center">
+            <h3 class="text-center  mb-2 ">Infosys Prize 2019 Winner's Sympoium</h3>
+            <select class="select-list">
                 <option>Edition 1</option>
                 <option>Edition 2</option>
                 <option>Edition 3</option>
                 <option>Edition 4</option>
                 <option>Edition 5</option>
             </select>
-            <p class="description pt-1">In the Year 2020, the Infosys Science Foundation Introduced a New Avenue
-                of sharing knowledge
-                across deciplines
-                called Winners' Symposium, to encourage new ideas and innovative collaboration.</p>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 ">
-            <div class="card-box">
-                <img src="sunita-sarawagi-video.png" alt="image" width="100%">
-                <div class="mxplayer-container">
-                    <a href="#0" class="icon-play player"></a>
-                </div>
-                <div class="card-under">
-                    <div class="card2-text text-center">
-                        <h3 class="headingprice mb-2  text-center">Infosys Prize 2019 Winner's Sympoium</h3>
-                        <select class="select-options">
-                            <option>Edition 1</option>
-                            <option>Edition 2</option>
-                            <option>Edition 3</option>
-                            <option>Edition 4</option>
-                            <option>Edition 5</option>
-                        </select>
-                        <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
-                                New Avenue
-                                of sharing knowledge
-                                across deciplines
-                                called Winners' Symposium, to encourage new ideas and innovative collaboration.
-                            </p>
-                      
-
-                    </div>
-                </div>
+          
+                <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
+                    New Avenue
+                    of sharing knowledge
+                    across deciplines
+                    called Winners' Symposium, to encourage new ideas and innovative collaboration.
+                </p>
             </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6  box">
-            <div class="card-box">
-                <img src="manjula-reddy-video.png" alt="image" width="100%">
-                <div class="mxplayer-container">
-                    <a href="#0" class="icon-play player"></a>
-                   
-                </div>
-                <div class="card-under">
-                    <div class="card2-text text-center">
-                        <h3 class="headingprice mb-2  text-center">Infosys Prize 2019 Winner's Sympoium</h3>
-                        <select class="select-options">
-                            <option>Edition 1</option>
-                            <option>Edition 2</option>
-                            <option>Edition 3</option>
-                            <option>Edition 4</option>
-                            <option>Edition 5</option>
-                        </select>
-                     <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
-                                New Avenue
-                                of sharing knowledge
-                                across deciplines
-                                called Winners' Symposium, to encourage new ideas and innovative collaboration.
-                            </p>
-                        </div>
 
-                   </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6  box">
-            <div class="card-box">
-                <img src="siddharth-mishra-video.png" alt="image" width="100%">
-                <div class="mxplayer-container">
-                    <a href="#0" class="icon-play player"></a>
-                </div>
-                <div class="card-under">
-                    <div class="card2-text text-center">
-                        <h3 class="headingprice mb-2  text-center">Infosys Prize 2019 Winner's Sympoium</h3>
-                        <select class="select-options">
-                            <option>Edition 1</option>
-                            <option>Edition 2</option>
-                            <option>Edition 3</option>
-                            <option>Edition 4</option>
-                            <option>Edition 5</option>
-                        </select>
-                      <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
-                                New Avenue
-                                of sharing knowledge
-                                across deciplines
-                                called Winners' Symposium, to encourage new ideas and innovative collaboration.
-                            </p>
-                        </div>
-
-                   </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 box">
-            <div class="card-box">
-                <img src="anand-pandian-video.png" alt="image" width="100%">
-                <div class="mxplayer-container">
-                    <a href="#0" class="icon-play player"></a>
-                </div>
-                <div class="card-under">
-                    <div class="card2-text text-center">
-                        <h3 class="headingprice  mb-2  text-center">Infosys Prize 2019 Winner's Sympoium</h3>
-                        <select class="select-options">
-                            <option>Edition 1</option>
-                            <option>Edition 2</option>
-                            <option>Edition 3</option>
-                            <option>Edition 4</option>
-                            <option>Edition 5</option>
-                        </select>
-                       <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
-                                New Avenue
-                                of sharing knowledge
-                                across deciplines
-                                called Winners' Symposium, to encourage new ideas and innovative collaboration.
-                            </p>
-                        </div>
-
-                   </div>
-            </div>
-        </div>
+       
     </div>
 </div>
 
+</div>      
 
+
+
+<div class="col-lg-4 col-md-4 col-sm-6 text-center main-card border box pt-3">
+    <h3 class="heading-price mb-2 ">Infosys Prize 2019 Winner's Sympoium</h3>
+    <select class="options">
+        <option>Edition 1</option>
+        <option>Edition 2</option>
+        <option>Edition 3</option>
+        <option>Edition 4</option>
+        <option>Edition 5</option>
+        </select>
+        <p class="description pt-1">In the Year 2020, the Infosys Science Foundation Introduced a New Avenue
+            of sharing knowledge across deciplines called Winners' Symposium, to encourage new ideas and innovative collaboration.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6  border">
+                <div class="card-box">
+                    <img src="sunita-sarawagi-video.png" alt="image" width="100%">
+                    <div class="mxplayer-container">
+                        <a href="#0" class="icon-play player"></a>
+                        </div>
+            <div class="card-under">
+            <div class="cardtext text-center">
+            <h3 class="heading-price  mb-2 ">Infosys Prize 2019 Winner's Sympoium</h3>
+            <select class="select-list">
+            <option>Edition 1</option>
+            <option>Edition 2</option>
+            <option>Edition 3</option>
+            <option>Edition 4</option>
+            <option>Edition 5</option>
+            </select>
+            <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
+                New Avenue of sharing knowledge across deciplines called Winners' Symposium, to encourage new ideas and innovative collaboration.</p>
+                </div>
+            </div>
+             </div>
+             </div>
+             <div class="col-lg-4 col-md-4 col-sm-6 border box">
+                 <div class="card-box">
+                     <img src="manjula-reddy-video.png" alt="image" width="100%">
+                     <div class="mxplayer-container">
+                         <a href="#0" class="icon-play player"></a>
+                         </div>
+                         <div class="card-under">
+                             <div class="cardtext text-center">
+                                 <h3 class="heading-price mb-2 ">Infosys Prize 2019 Winner's Sympoium</h3>
+                                 <select class="select-list">
+                                 <option>Edition 1</option>
+                                 <option>Edition 2</option>
+                                 <option>Edition 3</option>
+                                 <option>Edition 4</option>
+                                 <option>Edition 5</option>
+                                 </select>
+                                 <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
+                                     New Avenue of sharing knowledge across deciplines called Winners' Symposium, to encourage new ideas and innovative collaboration.</p>
+                                     </div>
+                                                                                                 
+                                    
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-6 border box">
+                                        <div class="card-box">
+                                            <img src="siddharth-mishra-video.png" alt="image" width="100%">
+                                            <div class="mxplayer-container">
+                                                <a href="#0" class="icon-play player"></a>
+                                                </div>
+                                                <div class="card-under">
+                                                    <div class="cardtext text-center">
+                                                        <h3 class="heading-price mb-2 ">Infosys Prize 2019 Winner's Sympoium</h3>
+                                                        <select class="select-list">
+                                                            <option>Edition 1</option>
+                                                            <option>Edition 2</option>
+                                                            <option>Edition 3</option>
+                                                            <option>Edition 4</option>
+                                                            <option>Edition 5</option>
+                                                            </select>
+                                                            
+                                                            <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
+                                                                New Avenue of sharing knowledge across deciplines called Winners' Symposium, to encourage new ideas and innovative collaboration.</p>
+                                                                </div>
+                                                                              
+                                                                  </div>
+                                                                  </div>
+                                                                  </div>
+                                                                  <div class="col-lg-4 col-md-4 col-sm-6 border box">
+                                                                      <div class="card-box">
+                                                                          <img src="anand-pandian-video.png" alt="image" width="100%">
+                                                                          <div class="mxplayer-container">
+                                                                              <a href="#0" class="icon-play player"></a>
+                                                                              </div>
+                                                                              <div class="card-under">
+                                                                                  <div class="cardtext text-center">
+                                                                                      <h3 class="heading-price mb-2">Infosys Prize 2019 Winner's Sympoium</h3>
+                                                                                      <select class="select-list">
+                                                                                          <option>Edition 1</option>
+                                                                                          <option>Edition 2</option>
+                                                                                          <option>Edition 3</option>
+                                                                                          <option>Edition 4</option>
+                                                                                          <option>Edition 5</option>
+                                                                                          </select>
+                                                                                          <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
+                                                                                              New Avenue of sharing knowledge across deciplines called Winners' Symposium, to encourage new ideas and innovative collaboration.</p>
+                                                                                               </div>
+                                                                                               </div>
+                                                                                               </div>
+                                                                                               </div>
+                                                                                                </div>
+                                                                                                </div>                             
+                                                                 
+                                
+                                   
 
 <footer class="footer-sec">
     <div class="container">
@@ -855,4 +827,7 @@ font-family:Poppins;
 
 
 
+
+
 </body>
+</html>
