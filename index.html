@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+        padding:0;
+        margin:0;
+    }
+
+    
+body{
+    background-color:#14202E;
+}
+.container-searchsection {
+    width: 100%;
+}
+.headertitle{
+    color:#ffffff;
+    font-size:24px;
+    font-family:Roboto;
+    font-weight: 400;
+    margin-left:18px;
+    text-decoration:none;
+} 
+.headertitle:hover{
+    color:tomato;
+    transition:.1s  all ease;
+
+}
+.header-links{
+    color:#C7CBD6;
+    font-size:18px;
+    font-family:poppins;
+
+}
+.header-links:hover{
+    color:turquoise;
+    transition:0.5  all linear;
+}
+.menu-icon{
+    border-bottom: #FFFFFF 1px solid;
+    position: relative;
+    width: 15px;
+}
+.menu-icon::before{
+    position: absolute;
+    content: "";
+    width: 22px;
+    right: 0;
+    border-top: #FFFFFF 1px solid;
+}
+.menu-icon::after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    top: 24px;
+    right: 0;
+    border-bottom: #FFFFFF 1px solid;
+}
+.images{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+/* .navbar-mini{
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+} */
+.links-tags{
+    color: #8695A8;
+    font-size: 18px;
+    
+}
+.links-tags:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: #F1AC4D 2px solid;
+    transition-duration: .5s linear;
+}
+.main-container{
+    position: relative;
+    
+}
+.search-container{
+    position: absolute;
+    content: "";
+    top:100%;
+    background-color: #14202E;
+    opacity: 0.8;
+    width: 100%;
+}
+.search-bar{
+    color: #C7CBD6;
+    font-size: 37px;
+    border-width: 0px;
+    background-color: transparent;
+    position: relative;
+}
+.search-bar::before{
+    position: absolute;
+    content: "\e900";
+    font-family: "icomoon";
+    color: #FFFFFF;
+    left: 0%;
+    top: 0;
+}
+.search{
+    padding-left: 15%;
+    color:white;
+}
+.search:hover{
+    text-decoration: none;
+}
+
+
+
+
+
+    /* .header-section{
+    background-color:#14202E;
+    background-size: cover;
+
+}
+.infosys-heading{
+    text-decoration:none;
+    color:#C7CBD6;
+    font-size:18px;
+    font-family:Poppins;
+    font-weight:400;
+    margin-right:37px;
+}
+
+
+
+
+
+
+.tags-header{
+color:#8695A8;
+font-size:18px;
+font-family:Poppins;
+
+}
+.tags-header-1{
+    color:#FFFFFF;
+    font-size:18px;
+    font-family:Poppins;
+   
+}
+.tags-header:hover{
+    border-bottom:1px solid orange;
+   color:#8695A8;
+    opacity:1;
+    text-decoration:none;
+}
+.tags-header-1:hover{
+    border-bottom:1px solid orange;
+    color:#FFFFFF;
+    opacity:1;
+    text-decoration:none;
+} */
+
+/* .search-container{
+    position: relative;
+} */
+/* .search-container{
+   background-color: lighter; 
+   position: absolute;
+   bottom:-10%;
+   z-index: 9999999999999;
+}  */
+
+/*.a-items{
+    text-decoration: none;
+}
+.a-items:hover{
+    text-decoration:none ;
+}
+.header-container{
+    background-color:#14202E ;
+    background-size: cover;
+}*/
+
+.card-section{
+    background-color: #223247;
+    width:100%;
+   
+   
+}
+
+.box{
+    position: relative;
+}
+.description-1{
+    font-family:"poppins";
+    font-size:24px;
+    color:#FFFFFF;
+}
+
+.options{
+    background-color: #223247;
+    border: none;
+    color: white;
+    font-size:18px;
+    border-bottom: 1px solid;
+    border-bottom-color: #8695A8;
+    margin-bottom: 20px;
+    width:61%;
+}
+.select-options{
+    background-color: #223247;
+    border: none;
+    color: white;
+    font-size:18px;
+    border-bottom: 1px solid;
+    border-bottom-color: #8695A8;
+    margin-bottom: 20px;
+    width:61%;
+}
+.headingprice{
+    color: white;
+    font-family:"poppins";
+    font-weight:bold;
+    font-size:34px;
+    padding-left:10px;
+    padding-right:10px;
+
+   
+}
+
+  
+
+.description{
+    color: #8695A8;
+    font-family: "poppins";
+    font-size: 20px;
+    text-align:center;
+     padding: 0px 9px 0px ;
+   
+
+} 
+
+ .box{
+    position: relative;
+    /* max-width: 639px;
+    max-height: 467px;  */
+
+} 
+.icon-search {
+    font-size: 30px;
+}
+.box::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 60%;
+    width: 100%;
+    background-image: linear-gradient(to top, #232A44, #1F253D);
+    opacity: 0.09;
+    border-color: #F1AC4D;
+}
+/**.photo{
+    width: 100%;
+    height: 100%;
+}**/
+.desc_container{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 2%;
+    bottom: 3%;
+    z-index: 1;
+}
+
+.mxplayer-container{
+    position: absolute;
+    top: 80%;
+    left: 9%;
+    z-index: 1;
+
+}
+.player{
+    height:64px;
+    width:64px;
+    color:white;
+    font-size:30px;
+}
+.playicon{
+   background-color:#F1AC4D;
+   color:white;
+   border-radius:20px; 
+    font-size:30px;
+    height:64px;
+    width:64px;
+   
+    
+}
+
+.paragraph{
+    color: white;
+    font-family: "poppins";
+    font-size:21px;
+    max-width: 586px;
+}
+.name{
+    color: white;
+    font-family: "poppins";
+    font-size: 21px;
+    font-weight:700;
+}
+.card-box {
+    position: relative;
+    width: 100%;
+  }
+  
+  /**.image {
+    display:block;
+    width: 100%;
+    height: auto;
+  }**/
+  
+  .card-under {
+    width: 100%;
+    height:0;
+    position: absolute;
+    background-color:#223247;
+    left: 0;
+    bottom: 0;
+    right:0;
+    z-index: 1;
+    transition: .5s ease;
+    overflow: hidden;
+
+   
+   
+
+    
+  }
+  
+  .card-box:hover .card-under {
+    height: 100%;
+    width:100%;
+  }
+  
+  .card2-text {
+    color: white;
+    font-weight:"semibold";
+    position: absolute;
+    font-size:34px;
+    left: 0%;
+  }
+  /**.overlay_heading{
+      width: 20%; }**/
+  
+@media only screen and (min-width: 576px) and (max-width: 986px) {
+    .description{
+        font-size: 9px;
+    }
+    .headingprice{
+        font-size:10px ;
+        padding: 3px;
+    }
+}
+@media only screen and (min-width:987px) and (max-width:1250px) {
+    .description{
+        font-size: 15px;
+    }
+    .headingprice{
+        font-size:20px ;
+        padding: 10px;
+
+} 
+}
+
+@media only screen and (min-width:320px) and (max-width:475px) {
+    .name{
+        font-size: 12px;
+
+    }
+    .description-1{
+        font-size: 12px;
+    }
+}
+
+
+
+
+@media only screen and (min-width:576px) and (max-width:1250px) {
+   
+    .name{
+        font-size: 8px;
+        padding: 0px;
+
+    }
+    .description-1{
+        font-size: 10px;
+        padding: 0px;
+    }
+
+}
+/* <!----footer--> */
+
+.footer-sec{
+    background-color:#14202E;
+    background-size:cover;
+   width:100%;
+    padding-top:53.5px;
+  
+} 
+.infosys-image{
+    display:flex;
+    align-items:center;
+}
+.footer-title{
+    color:#C9C9C9;
+    font-family:"Roboto";
+    font-size:24px;
+    margin-left:18px;
+    transition:.1s all linear; 
+}
+.footer-title:hover{
+    color:palegreen;
+    
+}
+.verticle-line{
+    border-left:1px solid #8695A8;
+    width:1px;
+    height:150px;
+}
+/* .hr-line{
+    position:absolute;
+    content:"";
+    background-color:#FFFFFF;
+    top:40%;
+    left:55%;
+    transform:rotate(90deg);
+} */
+ 
+
+.footer-heading{
+    font-family:"Poppins";
+    font-size:20px;
+    color:#8695A8;
+    transition:0.5 all ease;
+}
+.footer-heading:hover{
+    color:violet;
+
+
+}
+.quick-links{
+    list-style-type:none;
+} 
+.aboutsite-links-1 {
+    text-decoration:underline;
+    list-style-type:none;
+}
+.link{
+    color:#8695A8;
+    font-size:16px;
+    font-family:"Poppins";
+    transition:0.5 all linear;
+   
+
+}
+.link:hover{
+    color:orange;
+    text-decoration:none;
+}
+
+.email-container{
+    position:relative;
+}
+.email-input{
+    border:none;
+    width:336px;
+    height:54px;
+    padding:15px 12px;
+
+}
+.send-btn{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    height:54px;
+    width:100px;
+    background:#14202E;
+    color:white;
+    padding:15px 30px;
+    border:1px solid #8695A8;
+}
+.icon {
+    transition: all 0.4s linear;
+   
+    color:#8695A8
+}
+.icon:hover{
+    color:blue;
+    transform:rotateX(360);
+}
+
+.icons-container a{
+    font-size:32px;
+    text-decoration:none;
+   
+}
+
+.icons-container a + a{
+    margin-left:15px;
+}
+.icon-arrow-up-circle {
+    font-size:39px;
+    color:grey; 
+     text-decoration: none; 
+    list-style-type: none;
+    transition:.1s all linear; 
+} 
+
+.icon-arrow-up-circle:hover{
+   color:yellow;
+}
+.copyright-border-line{
+    border-top:1px solid #8695A8;
+    
+}
+.copyright{
+    font-size:16px;
+    color:#8695A8;
+    font-family:Poppins;
+    font-weight:300;
+    text-align: center;
+    letter-spacing:30;
+   
+}
+@media only screen and (min-width: 320px) and (max-width: 986px) {
+    .email-container{
+    position:relative;
+}
+.email-input{
+    border:none;
+    width:290px;
+    height:50px;
+    padding:15px 12px;
+
+}
+.send-btn{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    height:50px;
+    width:80px;
+    background:#14202E;
+    color:white;
+    padding:15px 30px;
+    border:1px solid #8695A8;
+}
+}
+</style>
+
+
+
+<body>
+    <!-- <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex flex-row justify-content-between align-items-center pb-1 pt-2">
+                    <div class="col-md-6 col-sm-4">
+                        <a href="#0" class="head-link">
+                            <img src="Infosys Science FOUNDATION_ final.png" alt="image">
+                            <span class="header-title">INFOSYS PRIZE</span>
+                        </a>
+                   </div>
+                    <div class="col-md-6 col-sm-4 header-top-links">
+                        <a href="#0" class="infosys-heading">Infosys Science Foundation</a>
+                        <a href="#0" class="icon-search icon mr-5"></a>
+                        <a href="#0" class="icon-menu icon" ></a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                   
+                        <ul class="d-flex list-items">
+                            <li><a href="#0" class="tags-header">Lectures</a></li>
+                            <li><a href="#0" class="tags-header">Host a Lecture</a></li>
+                            <li><a href="#0" class="tags-header-1">Winner's Symposium</a></li>
+                        </ul>
+                   
+                </div>
+            </div>
+        </div>
+</header> -->
+
+<header class="sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark ">
+        <div class="container">
+        <div>
+            <img class="images" src="Infosys Science FOUNDATION_ final.png" alt="logo">
+            <span class="headertitle pl-2">INFOSYS PRIZE</span>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link header-links" href="#">Infosys Science Foundation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link icon-search pl-4 pr-4 " href="#"></a>
+                </li>
+                <li class="nav-item pt-1 hide">
+                    <a class="nav-link menu-icon pl-3 pr-3" href="#"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <ul class="navbar-small container nav ">
+        <li class="active nav-link">
+            <a data-toggle="tab" class="links-tags" href="#link1">Lectures</a>
+        </li>
+        <li class="nav-link">
+            <a data-toggle="tab" class="links-tags" href="#link2">Host Lecture</a>
+        </li>
+        <li class="nav-link">
+            <a data-toggle="tab" class="links-tags" href="#link3">Winner's Symposium</a>
+        </li>
+    </ul>
+    <div class="container-searchsection">
+       <div class="search-container p-1"> 
+            <a href="#" class="icon-search search pr-3"></a>
+            <input type="search" placeholder="Search..." class="search-bar w-50">
+        </div>
+    </div>
+</header>
+ 
+    
+
+
+
+
+
+<div class="container-fluid m-0 p-0">
+    <div class="row no-gutters">
+        <div class="col-lg-4 col-md-4 col-sm-6  box">
+            <div class="card-box">
+                <img src="g-mugesh-video.png" alt="image1" width="100%">
+                <div class="desc_container ">
+                    <a href="#0" class="icon-play playicon"></a>
+                    <p class="description-1">Lorem ipsum dolor sit amet, consecutor adipiscing</p>
+                    <small class="name">Prof. Name Name Name</small>
+                </div>
+                <div class="card-under">
+                    <div class="card2-text text-center">
+                        <h5 class="headingprice  mb-2  text-center">Infosys Prize 2019 Winner's Sympoium</h5>
+                        <select class="select-options">
+                            <option>Edition 1</option>
+                            <option>Edition 2</option>
+                            <option>Edition 3</option>
+                            <option>Edition 4</option>
+                            <option>Edition 5</option>
+                        </select>
+                      
+                            <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
+                                New Avenue
+                                of sharing knowledge
+                                across deciplines
+                                called Winners' Symposium, to encourage new ideas and innovative collaboration.
+                            </p>
+                        </div>
+
+                   
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 text-center card-section  box  pt-3 " >
+           <h3 class="headingprice mb-2 text-center ">Infosys Prize 2019 Winner's Sympoium</h3>
+            <select class="options">
+                <option>Edition 1</option>
+                <option>Edition 2</option>
+                <option>Edition 3</option>
+                <option>Edition 4</option>
+                <option>Edition 5</option>
+            </select>
+            <p class="description pt-1">In the Year 2020, the Infosys Science Foundation Introduced a New Avenue
+                of sharing knowledge
+                across deciplines
+                called Winners' Symposium, to encourage new ideas and innovative collaboration.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 ">
+            <div class="card-box">
+                <img src="sunita-sarawagi-video.png" alt="image" width="100%">
+                <div class="mxplayer-container">
+                    <a href="#0" class="icon-play player"></a>
+                </div>
+                <div class="card-under">
+                    <div class="card2-text text-center">
+                        <h3 class="headingprice mb-2  text-center">Infosys Prize 2019 Winner's Sympoium</h3>
+                        <select class="select-options">
+                            <option>Edition 1</option>
+                            <option>Edition 2</option>
+                            <option>Edition 3</option>
+                            <option>Edition 4</option>
+                            <option>Edition 5</option>
+                        </select>
+                        <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
+                                New Avenue
+                                of sharing knowledge
+                                across deciplines
+                                called Winners' Symposium, to encourage new ideas and innovative collaboration.
+                            </p>
+                      
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6  box">
+            <div class="card-box">
+                <img src="manjula-reddy-video.png" alt="image" width="100%">
+                <div class="mxplayer-container">
+                    <a href="#0" class="icon-play player"></a>
+                   
+                </div>
+                <div class="card-under">
+                    <div class="card2-text text-center">
+                        <h3 class="headingprice mb-2  text-center">Infosys Prize 2019 Winner's Sympoium</h3>
+                        <select class="select-options">
+                            <option>Edition 1</option>
+                            <option>Edition 2</option>
+                            <option>Edition 3</option>
+                            <option>Edition 4</option>
+                            <option>Edition 5</option>
+                        </select>
+                     <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
+                                New Avenue
+                                of sharing knowledge
+                                across deciplines
+                                called Winners' Symposium, to encourage new ideas and innovative collaboration.
+                            </p>
+                        </div>
+
+                   </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6  box">
+            <div class="card-box">
+                <img src="siddharth-mishra-video.png" alt="image" width="100%">
+                <div class="mxplayer-container">
+                    <a href="#0" class="icon-play player"></a>
+                </div>
+                <div class="card-under">
+                    <div class="card2-text text-center">
+                        <h3 class="headingprice mb-2  text-center">Infosys Prize 2019 Winner's Sympoium</h3>
+                        <select class="select-options">
+                            <option>Edition 1</option>
+                            <option>Edition 2</option>
+                            <option>Edition 3</option>
+                            <option>Edition 4</option>
+                            <option>Edition 5</option>
+                        </select>
+                      <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
+                                New Avenue
+                                of sharing knowledge
+                                across deciplines
+                                called Winners' Symposium, to encourage new ideas and innovative collaboration.
+                            </p>
+                        </div>
+
+                   </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 box">
+            <div class="card-box">
+                <img src="anand-pandian-video.png" alt="image" width="100%">
+                <div class="mxplayer-container">
+                    <a href="#0" class="icon-play player"></a>
+                </div>
+                <div class="card-under">
+                    <div class="card2-text text-center">
+                        <h3 class="headingprice  mb-2  text-center">Infosys Prize 2019 Winner's Sympoium</h3>
+                        <select class="select-options">
+                            <option>Edition 1</option>
+                            <option>Edition 2</option>
+                            <option>Edition 3</option>
+                            <option>Edition 4</option>
+                            <option>Edition 5</option>
+                        </select>
+                       <p class="description">In the Year 2020, the Infosys Science Foundation Introduced a
+                                New Avenue
+                                of sharing knowledge
+                                across deciplines
+                                called Winners' Symposium, to encourage new ideas and innovative collaboration.
+                            </p>
+                        </div>
+
+                   </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="footer-sec">
+    <div class="container">
+    <div class="row">
+            <div class="col-12 col-md-3 ">
+                <figure class="infosys-image">
+                    <img src="Infosys Science FOUNDATION_ final.png" alt="ISF-image">
+                   <figcaption class="footer-title">INFOSYS PRIZE</figcaption>
+                </figure>
+                
+                </div>
+                <div class="col-md-1 d-none d-md-block ">
+                    <hr class="verticle-line">
+                
+                </div>
+            
+            <div class="col-12 col-md-3 d-flex flex-column justify-content-between">
+                <div class="d-flex flex-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="quick-links">
+                        <li><a href="#0" class="link">Logs</a></li>
+                        <li><a href="#0" class="link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column">
+                    <h4 class="footer-heading">About the site</h4>
+                    <ul class="aboutsite-links-1 pb-5">
+                        <li><a href="#0" class="link">Privacy Policy</a></li>
+                        <li><a href="#0" class="link">Terms of use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 flex-column justify-content-between">
+                <div>
+                    <h4 class="footer-heading">Subscribe to event mailers</h4>
+                    <label class="email-container">
+                        <input type="text" placeholder="Your email" class="email-input">
+                        <button type="button" class="send-btn">Send</button>
+                    </label>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Connect with</h4>
+                    <div class="icons-container pb-5">
+                       <a href="#0" class="icon icon-facebook"></a>
+                        <a href="#0"><i class="icon icon-twitter"></i></a>
+                        <a href="#0"><i class="icon icon-linkedin"></i></a>
+                        <a href="#0"><i class="icon icon-youtube-play"></i></a>
+                        <a href="#0"><i class="icon icon-envelope"></i></a>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1  icons-container">
+               <a href="#0" class="icon-arrow-up-circle"></a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="copyright-border-line pt-3 pb-2">
+        <p class="copyright">&copy Copyright 2020.All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+</body>
+</html>
